@@ -1,0 +1,44 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(https://fonts.googleapis.com/css?family=Vollkorn:400,700);
+
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-family: 'Vollkorn', serif;
+	font-weight: bold;
+}
+p {
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.content {
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.navbar {
+	margin-bottom: 0;
+	background: #c64d44;
+	border: none;
+	border-radius: 0;
+}
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+	color: #fff;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus, .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+	color: #f8f8f8;
+}
+.navbar-default .navbar-toggle .icon-bar {
+	background: #fff;
+}
+
+a {
+	color: #c64d44;
+}
+a:hover, a:focus {
+	color: #8b312a;
+	text-decoration: none;
+}
