@@ -16,6 +16,7 @@
         <li><a href="{{ route('register.index') }}">Register</a></li>
         <li><a href="{{ route('faqs') }}">FAQs</a></li>
         @if (Auth::check())
+          <li><a href="{{ route('admin.index') }}">Admin</a></li>
           <li><a href="{{ route('auth.logout') }}">Logout</a></li>
         @endif
       </ul>

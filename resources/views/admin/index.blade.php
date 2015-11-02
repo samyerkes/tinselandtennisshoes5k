@@ -4,9 +4,15 @@
     
     <div class="row">
         
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-success active" role="progressbar" aria-valuenow="{{ $registrations->total()/$goal*100 }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ $registrations->total()/$goal*100 }}%">
+                <span class="sr-only">{{ $registrations->total()/$goal*100 }}% Complete (success)</span>
+            </div>
+        </div>
+
         <div class="panel panel-default">
             <div class="panel-heading">
-                All registrations
+                All registrations <span class="badge pull-right">{{ $registrations->total() }}</span>
             </div>
             <div class="table-responsive">
                 <table class="table">
@@ -40,6 +46,10 @@
                     </tbody>
                 </table>
             </div>
+        </div>
+        
+        <div class="text-center">
+            {!! $registrations->render() !!}    
         </div>
 
     </div>

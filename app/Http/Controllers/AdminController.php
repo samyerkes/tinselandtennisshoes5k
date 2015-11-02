@@ -17,8 +17,10 @@ class AdminController extends Controller
      */
     public function index()
     {
-        $registrations = Registration::all();
-        return view('admin.index', ['registrations' => $registrations]);
+        // $registrations = Registration::all()->paginate(5);
+        $registrations = Registration::paginate(10);
+        $goal = 50;
+        return view('admin.index', ['registrations' => $registrations, 'goal' => $goal]);
     }
 
     /**
