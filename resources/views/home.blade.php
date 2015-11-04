@@ -1,26 +1,41 @@
 @extends('base')
 
 @section('content')
-
-            <h2 class="text-center"><a href="http://changetheworldrva.org">Benefitting Change the World RVA</a></h2>
-
             <div class="row">
-                <div class="col-md-3">
-                    <h2>Who</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur in, veniam explicabo! Nobis dicta numquam ea sint tempore, ratione voluptatem suscipit quisquam nesciunt, adipisci deserunt illo blanditiis aperiam ut cum, saepe reprehenderit minima deleniti placeat animi est? Officiis, molestiae ad.</p>
+                <div class="col-md-4 col-md-push-8">
+                    <img src="imgs/logo2.png" alt="" class="img-responsive logoimg">    
                 </div>
-                <div class="col-md-3">
-                    <h2>What</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius cumque natus, harum reiciendis? Architecto, excepturi ut a nisi perspiciatis illum commodi, aspernatur at quis eos quae, vero obcaecati eius similique labore quibusdam hic numquam. Qui saepe debitis recusandae neque mollitia!</p>
+                <div class="col-md-8 col-md-pull-4">
+                    <p>The who... the what... the where..</p>
+                    <p>Something about benefitting <a href="http://changetheworldrva.org">Benefitting Change the World RVA</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi culpa officia. Qui, nihil, tempore repellat vero quam dignissimos accusantium.</p>
+                    <p>Amet voluptatibus, animi. Accusantium dicta, illo voluptas sequi eaque accusamus vel aliquid tempora veritatis magni, nostrum hic reprehenderit et, iure deserunt asperiores delectus commodi ducimus quod. Quae blanditiis, culpa doloremque quasi fugit reiciendis necessitatibus quaerat voluptatem, distinctio dolores quidem, provident atque doloribus est repudiandae reprehenderit. Earum doloribus ipsum aperiam expedita repellendus consectetur vero sapiente recusandae rerum error hic soluta quos ducimus maxime distinctio veniam sint, possimus, voluptates harum asperiores atque, veritatis. Totam nihil quisquam amet quaerat dolores blanditiis vel, deleniti enim facilis animi distinctio. Repudiandae alias quod autem nesciunt doloribus animi rem, facilis dolores voluptates quis veritatis veniam et id!</p>
                 </div>
-                <div class="col-md-3">
-                    <h2>When</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam quis earum nam consectetur qui consequatur, expedita aspernatur temporibus necessitatibus voluptatibus vero molestias. Vero facilis reprehenderit, nobis esse est reiciendis nostrum natus. Quas quod ratione natus, veritatis consectetur architecto inventore neque.</p>
-                </div>
-                <div class="col-md-3">
-                    <h2>Where</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita quos deleniti, saepe omnis ad, consequuntur qui doloremque commodi id atque vero illum quisquam doloribus blanditiis perferendis! Ipsum nisi, excepturi, repellat nihil provident quam nam minima quod dolorem minus quaerat nemo!</p>
-                </div>
+                
+            </div>
+            
+        <div class="feature">
+            
+            <div class="row">
+              <div class="col-md-4">
+                <a href="#" class="thumbnail">
+                  <img src="imgs/map.png" alt="...">
+                </a>
+                <span class="text-center">Date and time</span>
+              </div>
+
+              <div class="col-md-4">
+                <a href="#" class="thumbnail">
+                  <img src="imgs/map.png" alt="...">
+                </a>
+                <span class="text-center">Course map</span>
+              </div>
+
+            <div class="col-md-4">
+                <a href="#" class="thumbnail">
+                  <img src="imgs/baumc.png" alt="...">
+                </a>
+                <span class="text-center">Sponsor</span>
+              </div>
             </div>
         </div>
 
