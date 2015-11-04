@@ -7,6 +7,7 @@ use App\Http\View;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Registration;
+use Mail;
 
 class RegistrationController extends Controller
 {
@@ -63,7 +64,17 @@ class RegistrationController extends Controller
         $registration->emergency_telephone = $request->emergency_telephone;
         $registration->save();
 
-        $request->session()->flash('success', 'We will see you in December!');
+        // Mail::send('email.create', ['registration' => $registration], function ($m) use ($user) {
+        //     $m->from('samuelyerkes@gmail.com', 'The last time @samyerkes...');
+        //     $m->to($user->email, $user->name)->subject('You made a new last record!');
+        // });
+
+        Mail::send('email.create', ['registration' => $registration], function ($m) use ($registration) {
+            $m->from('tinselandtennisshoes@gmail.com', 'Tinsel and Tennis Shoes 5K');
+            $m->to($registration->email, $registration->fname)->subject('You have successfully registered!');
+        });
+
+        $request->session()->flash('success', 'A confirmation email has been sent to you. We will see you in December!');
 
         return view('facts');
     }
