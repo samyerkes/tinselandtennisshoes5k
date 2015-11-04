@@ -6,8 +6,10 @@ body {
 }
 
 .logoimg {
-	border:2px solid #000;
+	border: 2px solid #aaa;
+	border-radius: 4px;
 }
+
 h1, h2, h3, h4 {
 	font-family: 'Vollkorn', serif;
 	font-weight: bold;

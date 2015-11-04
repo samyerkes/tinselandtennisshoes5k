@@ -1,14 +1,18 @@
 @extends('base')
 
 @section('content')
+
+    <img src="imgs/tts_land.png" alt="" class="img-responsive ">    
+
+
             <div class="row">
-                <div class="col-md-4 col-md-push-8">
-                    <img src="imgs/logo2.png" alt="" class="img-responsive logoimg">    
+                <div class="col-md-6">
+                    <p>The who... the what... the when... some basic information.</p>
+                    <p>Molestiae quas ullam aut illum facilis optio quod quo, iste voluptatibus odit, magni eaque assumenda praesentium iusto voluptatum asperiores impedit dolore numquam sint repudiandae nam esse qui in a. Similique ab praesentium optio delectus aperiam quidem commodi, iure nobis harum consequuntur, sapiente veritatis molestias nihil! Magnam voluptatum exercitationem quaerat maxime.</p>
                 </div>
-                <div class="col-md-8 col-md-pull-4">
-                    <p>The who... the what... the where..</p>
-                    <p>Something about benefitting <a href="http://changetheworldrva.org">Benefitting Change the World RVA</a>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit eligendi culpa officia. Qui, nihil, tempore repellat vero quam dignissimos accusantium.</p>
-                    <p>Amet voluptatibus, animi. Accusantium dicta, illo voluptas sequi eaque accusamus vel aliquid tempora veritatis magni, nostrum hic reprehenderit et, iure deserunt asperiores delectus commodi ducimus quod. Quae blanditiis, culpa doloremque quasi fugit reiciendis necessitatibus quaerat voluptatem, distinctio dolores quidem, provident atque doloribus est repudiandae reprehenderit. Earum doloribus ipsum aperiam expedita repellendus consectetur vero sapiente recusandae rerum error hic soluta quos ducimus maxime distinctio veniam sint, possimus, voluptates harum asperiores atque, veritatis. Totam nihil quisquam amet quaerat dolores blanditiis vel, deleniti enim facilis animi distinctio. Repudiandae alias quod autem nesciunt doloribus animi rem, facilis dolores voluptates quis veritatis veniam et id!</p>
+                <div class="col-md-6">
+                    <p>Stuff about the run benefitting <a href="http://changetheworldrva.org">Change the World RVA</a>...</p>
+                    <p>Expedita laboriosam magnam id tempore sit excepturi, nesciunt eos aliquam cupiditate nam ex laborum reprehenderit facilis sint itaque eaque. Fugiat perspiciatis, quod officiis accusamus totam alias nam consequuntur minima molestias nihil ullam architecto at nobis reiciendis minus sint blanditiis dolore, incidunt ex officia mollitia accusantium ad. Fugit tempora, placeat quia?</p>
                 </div>
                 
             </div>
@@ -20,7 +24,7 @@
                 <a href="#" class="thumbnail">
                   <img src="imgs/map.png" alt="...">
                 </a>
-                <span class="text-center">Date and time</span>
+                <span class="text-center">Date and time (December 12th, 2015)</span>
               </div>
 
               <div class="col-md-4">
