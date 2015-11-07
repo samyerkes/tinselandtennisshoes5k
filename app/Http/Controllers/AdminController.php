@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Registration;
+use DB;
 
 class AdminController extends Controller
 {
@@ -20,7 +21,8 @@ class AdminController extends Controller
         // $registrations = Registration::all()->paginate(5);
         $registrations = Registration::paginate(10);
         $goal = 50;
-        return view('admin.index', ['registrations' => $registrations, 'goal' => $goal]);
+        $totalRegistrationFee = DB::table('registrations')->sum('registration_fee');
+        return view('admin.index', ['registrations' => $registrations, 'goal' => $goal, 'totalRegistrationFee'=>$totalRegistrationFee]);
     }
 
     /**

@@ -22,6 +22,8 @@ class CreateRegistrationTable extends Migration
             $table->string('street');
             $table->string('state');
             $table->integer('zip');
+            $table->string('initials');
+            $table->decimal('registration_fee');
             $table->string('emergency_fname');
             $table->string('emergency_lname');
             $table->string('emergency_relationship');

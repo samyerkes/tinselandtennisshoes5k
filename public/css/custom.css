@@ -58,3 +58,6 @@ a:hover, a:focus {
 	color: #8b312a;
 	text-decoration: none;
 }
+.label-as-badge {
+    border-radius: 1em;
+}

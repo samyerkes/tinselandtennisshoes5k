@@ -21,6 +21,8 @@ $factory->define(App\Registration::class, function (Faker\Generator $faker) {
         'street' => $faker->streetAddress,
         'state' => $faker->stateAbbr,
         'zip' => $faker->postcode,
+        'initials' => 'xx',
+        'registration_fee' => 15.00,
         'emergency_fname' => $faker->firstName,
         'emergency_lname' => $faker->lastName, 
         'emergency_relationship' => 'Mother',

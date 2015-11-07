@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use App\Registration;
 use Mail;
+use App;
 
 class RegistrationController extends Controller
 {
@@ -44,10 +45,25 @@ class RegistrationController extends Controller
             'lname' => 'required',
             'telephone' => 'required',
             'dob' => 'required',
+            'initials' => 'required',
             'emergency_fname' => 'required',
             'emergency_lname' => 'required',
             'emergency_telephone' => 'required',
         ]);
+
+        $birthday = $request->dob;
+        $birthyear = substr($birthday, 0, 4);
+        $birthmonth = substr($birthday, 5, 2);
+        $birthdate = substr($birthday, 8, 2);
+        $years = \Carbon\Carbon::createFromDate($birthyear, $birthmonth, $birthdate)->age;
+
+        if ($years < 10) {
+            $amount = 1000; 
+            $fee = 10.00;   
+        } else {
+            $amount = 1500;
+            $fee = 15.00;   
+        }
 
         $registration = new Registration;
         $registration->fname = $request->fname;
@@ -58,16 +74,34 @@ class RegistrationController extends Controller
         $registration->street = $request->street;
         $registration->state = $request->state;
         $registration->zip = $request->zip;
+        $registration->initials = $request->initials;
+        $registration->registration_fee = $fee;
         $registration->emergency_fname = $request->emergency_fname;
         $registration->emergency_lname = $request->emergency_lname;
         $registration->emergency_relationship = $request->emergency_relationship;
         $registration->emergency_telephone = $request->emergency_telephone;
         $registration->save();
+        
+        if (App::environment('local')) {
+            \Stripe\Stripe::setApiKey(env('STRIPE_TEST_KEY'));
+        } else {
+            \Stripe\Stripe::setApiKey(env('STRIPE_LIVE_KEY'));
+        }
 
-        // Mail::send('email.create', ['registration' => $registration], function ($m) use ($user) {
-        //     $m->from('samuelyerkes@gmail.com', 'The last time @samyerkes...');
-        //     $m->to($user->email, $user->name)->subject('You made a new last record!');
-        // });
+        // Get the credit card details submitted by the form
+        $token = $_POST['stripeToken'];
+
+        // Create the charge on Stripe's servers - this will charge the user's card
+        try {
+            $charge = \Stripe\Charge::create(array(
+                "amount" => $amount, // amount in cents, again
+                "currency" => "usd",
+                "source" => $token,
+                "description" => "Tinsel and Tennis Shoes 5K"
+            ));
+        } catch(\Stripe\Error\Card $e) {
+            return "We're sorry your credit card has been declined.";
+        }
 
         Mail::send('email.create', ['registration' => $registration], function ($m) use ($registration) {
             $m->from('tinselandtennisshoes@gmail.com', 'Tinsel and Tennis Shoes 5K');
