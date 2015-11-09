@@ -83,7 +83,7 @@
                 <h2>Billing information</h2>
                 <p class="text-muted">Credit card payments are processed through the third party payment company <a href="https://stripe.com/">Stripe</a>. We do not store any credit card information on this website.</p>
 
-                <p class="text-muted">Chidren 10 years and younger will be charged $10.00, adults will be charged $15.00 per registration which will go as a direct donation to <a href="http://changetheworldrva.org">Change the World RVA</a>.</p>
+                <p class="text-muted">Chidren 13 years and younger will be charged $10.00, adults will be charged $15.00 per registration which will go as a direct donation to <a href="http://changetheworldrva.org">Change the World RVA</a>.</p>
 
                 <div class="form-group">
                     <label>Card Number</label>

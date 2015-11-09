@@ -20,6 +20,14 @@ Route::get('/faqs', ['as' => 'faqs', function () {
     return view('facts');
 }]);
 
+Route::get('/schedule', ['as' => 'schedule', function () {
+    return view('schedule');
+}]);
+
+Route::get('/contact', ['as' => 'contact', function () {
+    return view('contact');
+}]);
+
 Route::resource('register', 'RegistrationController');
 
 //admin routes

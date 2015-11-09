@@ -57,7 +57,7 @@ class RegistrationController extends Controller
         $birthdate = substr($birthday, 8, 2);
         $years = \Carbon\Carbon::createFromDate($birthyear, $birthmonth, $birthdate)->age;
 
-        if ($years < 10) {
+        if ($years < 13) {
             $amount = 1000; 
             $fee = 10.00;   
         } else {

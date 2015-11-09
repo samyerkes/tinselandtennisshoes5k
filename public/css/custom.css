@@ -61,3 +61,21 @@ a:hover, a:focus {
 .label-as-badge {
     border-radius: 1em;
 }
+.photo-card {
+	padding: 10px;
+	border: 1px solid #c1d641;
+	background:#e1eba3;
+	max-width: 300px;
+	-ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera */
+    transform: rotate(7deg);
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.photo-card img {
+	width: 100%;
+}
+@media screen and (max-width: 676px) {
+	.photo-card {
+		max-width: 100%;
+	}	
+}

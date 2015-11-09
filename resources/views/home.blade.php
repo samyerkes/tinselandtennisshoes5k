@@ -2,17 +2,18 @@
 
 @section('content')
 
-    <img src="imgs/tts_land.png" alt="" class="img-responsive ">    
+    <img src="imgs/tts_land.png" alt="Bon Air UMC Tinsel and Tennis Shoes 5k" class="img-responsive ">    
 
 
             <div class="row">
-                <div class="col-md-6">
-                    <p>The who... the what... the when... some basic information.</p>
-                    <p>Molestiae quas ullam aut illum facilis optio quod quo, iste voluptatibus odit, magni eaque assumenda praesentium iusto voluptatum asperiores impedit dolore numquam sint repudiandae nam esse qui in a. Similique ab praesentium optio delectus aperiam quidem commodi, iure nobis harum consequuntur, sapiente veritatis molestias nihil! Magnam voluptatum exercitationem quaerat maxime.</p>
+                <div class="col-md-9">
+                    <p>The 1st annual Tinsel and Tennis Shoes 5K race has a little something for everyone with a competitive 5K race, 5K walking category, fun and festive costume contests. Come on out and celebrate the Christmas Holidays with us!</p>
+                    <p>100% of the proceeds raised from this event will go <a href="http://changetheworldrva.org">Change the World RVA</a>, a 501 3c that supports homeless high school youth in Richmond. Your registration will serve as a donation that will help change the lives of homeless youth in Richmond, Virginia. All 5K runners receive a holiday ornament, post-race refreshments, a festive post-race awards ceremony, and plenty of picture opportunities with family and friends.</p>
                 </div>
-                <div class="col-md-6">
-                    <p>Stuff about the run benefitting <a href="http://changetheworldrva.org">Change the World RVA</a>...</p>
-                    <p>Expedita laboriosam magnam id tempore sit excepturi, nesciunt eos aliquam cupiditate nam ex laborum reprehenderit facilis sint itaque eaque. Fugiat perspiciatis, quod officiis accusamus totam alias nam consequuntur minima molestias nihil ullam architecto at nobis reiciendis minus sint blanditiis dolore, incidunt ex officia mollitia accusantium ad. Fugit tempora, placeat quia?</p>
+                <div class="col-md-3 hidden-xs hidden-sm">
+                  <div class="photo-card pull-right">
+                    <img src="imgs/running.jpg" alt="Running people">  
+                  </div>
                 </div>
                 
             </div>
@@ -20,21 +21,21 @@
         <div class="feature">
             
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4 col-xs-6">
                 <a href="#" class="thumbnail">
                   <img src="imgs/map.png" alt="...">
                 </a>
                 <span class="text-center">Date and time (December 12th, 2015)</span>
               </div>
 
-              <div class="col-md-4">
+              <div class="col-md-4 col-xs-6">
                 <a href="#" class="thumbnail">
                   <img src="imgs/map.png" alt="...">
                 </a>
                 <span class="text-center">Course map</span>
               </div>
 
-            <div class="col-md-4">
+            <div class="col-md-4 col-xs-12">
                 <a href="#" class="thumbnail">
                   <img src="imgs/baumc.png" alt="...">
                 </a>
