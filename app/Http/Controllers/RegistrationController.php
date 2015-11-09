@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\Registration;
 use Mail;
 use App;
+use Stripe\Error\Card;
 
 class RegistrationController extends Controller
 {
@@ -99,7 +100,7 @@ class RegistrationController extends Controller
                 "source" => $token,
                 "description" => "Tinsel and Tennis Shoes 5K"
             ));
-        } catch(\Stripe\Error\Card $e) {
+        } catch(Card $e) {
             return "We're sorry your credit card has been declined.";
         }
 

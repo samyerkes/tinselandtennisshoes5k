@@ -149,7 +149,11 @@
 @section('scripttags')
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
     <script type="text/javascript">
-        Stripe.setPublishableKey('pk_test_oW8uByGtFX6Q78lH1OYqmebS');
+        @if (App::environment('local'))
+            Stripe.setPublishableKey('{{ env('STRIPE_TEST_PUB_KEY') }}');
+        @else
+            Stripe.setPublishableKey('{{ env('STRIPE_LIVE_PUB_KEY') }}');
+        @endif
     </script>
     <script>
         jQuery(function($) {$('#registrationForm').submit(function(event) {var $form = $(this);
