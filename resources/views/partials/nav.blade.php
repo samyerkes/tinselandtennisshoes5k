@@ -14,7 +14,6 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="{{ route('register.index') }}">Register</a></li>
-        <li><a href="{{ route('schedule') }}">Schedule</a></li>
         <li><a href="{{ route('faqs') }}">FAQs</a></li>
         <li><a href="{{ route('contact') }}">Contact information</a></li>
         <li><a href="#">Sponsors</a></li>
