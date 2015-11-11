@@ -83,11 +83,7 @@ class RegistrationController extends Controller
         $registration->emergency_telephone = $request->emergency_telephone;
         $registration->save();
         
-        if (App::environment('local')) {
-            \Stripe\Stripe::setApiKey(env('STRIPE_TEST_KEY'));
-        } else {
-            \Stripe\Stripe::setApiKey(env('STRIPE_LIVE_KEY'));
-        }
+         \Stripe\Stripe::setApiKey(env('STRIPE_LIVE_KEY'));
 
         // Get the credit card details submitted by the form
         $token = $_POST['stripeToken'];
