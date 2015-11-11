@@ -16,7 +16,7 @@
         <li><a href="{{ route('register.index') }}">Register</a></li>
         <li><a href="{{ route('faqs') }}">FAQs</a></li>
         <li><a href="{{ route('contact') }}">Contact information</a></li>
-        <li><a href="#">Sponsors</a></li>
+        <li><a href="{{ route('sponsors') }}">Sponsors</a></li>
         @if (Auth::check())
           <li><a href="{{ route('admin.index') }}">Admin</a></li>
           <li><a href="{{ route('auth.logout') }}">Logout</a></li>

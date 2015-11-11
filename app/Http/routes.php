@@ -24,6 +24,10 @@ Route::get('/contact', ['as' => 'contact', function () {
     return view('contact');
 }]);
 
+Route::get('/sponsors', ['as' => 'sponsors', function () {
+    return view('sponsors');
+}]);
+
 Route::resource('register', 'RegistrationController');
 
 //admin routes

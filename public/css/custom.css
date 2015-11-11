@@ -70,6 +70,10 @@ a:hover, a:focus {
 	color: #8b312a;
 	text-decoration: none;
 }
+.list-group-item {
+	border: none;
+	text-align: center;
+}
 .label-as-badge {
     border-radius: 1em;
 }
