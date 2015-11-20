@@ -6,6 +6,9 @@
 
  					<h1>Frequently asked questions</h1>
 
+ 					<h3>When and where</h3>
+ 					<p>The fun run/walk will be held January 9th, 2016 at 9 a.m. and starts and ends at Bon Air United Methodist Church, 1645 Buford Rd, N. Chesterfield, Virginia. Although the run starts promptly at 9 a.m., make sure you get there a little early to stretch out and enjoy the festivities!</p>
+
  					<h3>Exactly how far is a 5k?</h3>
  					<p>A 5k is about 3.1 miles!</p>
 
@@ -16,7 +19,7 @@
 					<p>Parking is available at the church in designated areas and on side streets.</p>
 
 					<h3>After the race</h3>
-					<p>There will be delicious refreshments waiting for you at the church when you finish the Tinsel and Tennis Shoes/Run Walk. All participants will receive a holiday ornament and prizes will be awarded for the 1st, 2nd and 3rd place finishers and 1st, 2nd, and 3rd place for the most festive holiday attire.</p>
+					<p>There will be delicious refreshments waiting for you at the church when you finish the Tinsel and Tennis Shoes/Run Walk. All participants will receive a post-run gift and prizes will be awarded for the 1st, 2nd and 3rd place finishers and 1st, 2nd, and 3rd place for the most festive holiday attire.</p>
 
 					<h3>Schedule of events</h3>
 					
