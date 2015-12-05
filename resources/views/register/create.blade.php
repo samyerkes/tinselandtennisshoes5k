@@ -1,14 +1,14 @@
 @extends('base')
 
 @section('content')
-    
+
     <div class="row">
          {!! Form::open(array('action' => 'RegistrationController@store', 'id'=>'registrationForm')) !!}
 
             <div class="col-md-6">
 
                 <h2>Participant information</h2>
-                
+
                 <div class="form-group">
                     {!! Form::label('fname', 'First name'); !!}
                     {!! Form::text('fname', null, array('class' => 'form-control', 'placeholder'=>'First name')); !!}
@@ -57,7 +57,7 @@
             </div>
 
             <div class="col-md-6">
-                
+
                 <h2>Emergency contact</h2>
 
                 <div class="form-group">
@@ -94,7 +94,7 @@
                     <label>Card CVC</label>
                     <input type="text" size="4" data-stripe="cvc" class="form-control" placeholder="Security Code" />
                 </div>
-                
+
                 <div class="form-group">
                     <label>Expiration Date</label>
                     <div class="row">
@@ -134,15 +134,15 @@
 
             </div>
         </div>
-        
+
         <div class="row">
             <div class="col-md-6 col-md-offset-3">
-                
+
                 {!! Form::submit('Submit registration', array('class'=>'btn btn-success btn-lg btn-block')); !!}
                 {!! Form::close() !!}
 
             </div>
-            
+
     </div>
 @endsection
 

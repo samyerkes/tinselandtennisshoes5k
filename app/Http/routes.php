@@ -28,7 +28,9 @@ Route::get('/sponsors', ['as' => 'sponsors', function () {
     return view('sponsors');
 }]);
 
-Route::resource('register', 'RegistrationController');
+if (Setting::get('registrations') == "true") {
+  Route::resource('register', 'RegistrationController');
+}
 
 //admin routes
 Route::get('auth/login', ['as' => 'auth.login', 'uses' => 'Auth\AuthController@getLogin']);
@@ -36,7 +38,6 @@ Route::post('auth/login', 'Auth\AuthController@postLogin');
 Route::get('auth/logout', ['as' => 'auth.logout', 'uses' => 'Auth\AuthController@getLogout']);
 
 Route::group(['middleware' => 'auth'], function () {
-	Route::resource('admin', 'AdminController');	
+	Route::resource('admin', 'AdminController');
+  Route::resource('settings', 'SettingsController');
 });
-
-
